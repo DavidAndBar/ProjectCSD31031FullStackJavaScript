@@ -20,5 +20,20 @@ const centralManagementPlatform = new CentralManagementPlatform(1000, "LCD", "Mo
 const user = new UserEngagement(1000, 2000);
 
 const dataAnalysis = new DataAnalysis(1004, "Automatic Analysis", "Low energy consumption");
-const objects = {user, centralManagementPlatform, dataAnalysis};
+
+const executeCommand = () => {
+    console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
+            +"| Smart Campus Energy Management System |\n"
+            +"=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+    console.log(`${centralManagementPlatform.building?.name} Building Energy Usage\n`);
+    user.viewUsage(centralManagementPlatform);
+    console.log(`Data has been received!\n`);
+    console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
+            +"| Analysis of Energy Consumption Data   |\n"
+            +"=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+    dataAnalysis.analyzeData();
+}
+
+
+const objects = {user, centralManagementPlatform, dataAnalysis, executeCommand};
 export default objects;

@@ -9,10 +9,10 @@ class HVACSystem {
         this.energyConsumption = energyConsumption;
     }
     adjustTemperature() {
-        // Implement temperature adjustment logic
+        // TODO
     }
     scheduleMaintenance() {
-        // Implement maintenance scheduling logic
+        // TODO
     }
 }
 exports.default = HVACSystem;

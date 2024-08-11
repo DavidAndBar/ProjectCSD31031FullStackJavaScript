@@ -9,10 +9,10 @@ class RenewableEnergySource {
         this.energyGeneration = energyGeneration;
     }
     monitorOutput() {
-        // Implement output monitoring logic
+        // TODO
     }
     storeEnergy() {
-        // Implement energy storing logic
+        // TODO
     }
 }
 exports.default = RenewableEnergySource;

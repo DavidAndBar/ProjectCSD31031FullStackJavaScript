@@ -6,9 +6,9 @@ class MaintenanceSystem {
         this.schedule = schedule;
     }
     monitorEquipment() {
-        // Implement equipment monitoring logic
+        // TODO
     }
     scheduleMaintenance() {
-        // Implement maintenance scheduling logic
+        // TODO
     }
 }

@@ -20,5 +20,18 @@ const building = new Building_1.default(1234, "Main Campus", "271 Yorkdale Blvd"
 const centralManagementPlatform = new CentralManagementPlatform_1.default(1000, "LCD", "Monthly", "Normal", building);
 const user = new UserEngagement_1.default(1000, 2000);
 const dataAnalysis = new DataAnalysis_1.default(1004, "Automatic Analysis", "Low energy consumption");
-const objects = { user, centralManagementPlatform, dataAnalysis };
+const executeCommand = () => {
+    var _a;
+    console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
+        + "| Smart Campus Energy Management System |\n"
+        + "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+    console.log(`${(_a = centralManagementPlatform.building) === null || _a === void 0 ? void 0 : _a.name} Building Energy Usage\n`);
+    user.viewUsage(centralManagementPlatform);
+    console.log(`Data has been received!\n`);
+    console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
+        + "| Analysis of Energy Consumption Data   |\n"
+        + "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+    dataAnalysis.analyzeData();
+};
+const objects = { user, centralManagementPlatform, dataAnalysis, executeCommand };
 exports.default = objects;

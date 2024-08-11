@@ -9,10 +9,10 @@ class LightingSystem {
         this.energyConsumption = energyConsumption;
     }
     adjustLighting() {
-        // Implement lighting adjustment logic
+        // TODO
     }
     detectMotion() {
-        // Implement motion detection logic
+        // TODO
     }
 }
 exports.default = LightingSystem;
