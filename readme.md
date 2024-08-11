@@ -13,7 +13,7 @@ In the terminal, run the following to create the package.json:
 `npm init -y`
 
 ### Step 3:
-To install the package, run this in the any terminal: 
+To install the package, run this in any terminal: 
 
 `npm i "@alexander.gutierrez/smart-campus-energy-management-system"`
 
