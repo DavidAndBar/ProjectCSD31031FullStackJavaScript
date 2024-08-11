@@ -1,5 +1,5 @@
 {
-  "name": "smart-campus-energy-management-system",
+  "name": "@alexander.gutierrez/smart-campus-energy-management-system",
   "version": "1.0.0",
   "description": "The Smart Campus Energy Management System is designed to optimize energy usage across various buildings and facilities on a university campus. ",
   "main": "index.js",
